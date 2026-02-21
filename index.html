@@ -2,6 +2,29 @@
 <HTML>
     <HEAD>
         <TITLE> KALIKA MANAVGYAN</TITLE>
+        <style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url('kalika1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
 <style>
 .select-box {
     width: 250px;
@@ -66,17 +89,18 @@ body{
 </style>
     </HEAD>
     <BODY>
+        <div class="form-box">
    		<div align="center">
 <img src="kalika.jpg" alt="Kalika" width="100">
         <H2> PERSONAL INFORMATION</H2>
-<form action="PROJECT.html">
-    <input type="text" placeholder="First Name" class="input-box"><br>
-    <input type="text" placeholder="Last Name" class="input-box"><br>
-    <input type="numbers" placeholder="Class" class="input-box"><br>
-    <input type="text" placeholder="Section" class="input-box"><br>
+<form action="index.html">
+    <input type="text" placeholder="First Name" class="input-box" required><br>
+    <input type="text" placeholder="Last Name" class="input-box"required><br>
+    <input type="number" placeholder="Class" class="input-box"required><br>
+    <input type="text" placeholder="Section" class="input-box"required><br>
    </form>
   <h3> BRANCH </h3>
-  <select class="select-box">
+  <select class="select-box"required>
 <option>Science</option>
 <option>Management</option>
 <option>Humanities</option>
@@ -85,13 +109,15 @@ body{
 </select>
 <h3> SECTOR </h3>
 <form>
-<input type="radio" name="sector" value=" sector 1" >Sector 1 <br>
+<input type="radio" name="sector" value=" sector 1"required >Sector 1 <br>
 
-<input type="radio" name="sector" value=" sector 1">Sector 2<br>
+<input type="radio" name="sector" value=" sector 1"required>Sector 2<br>
 <a href="project.html" class="button-link">Submit</a>
- 
+</form>
+        </div>
 
 </BODY>
 
     </HTML>
+
 
